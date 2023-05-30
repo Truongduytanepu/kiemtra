@@ -88,18 +88,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bao" translatesAutoresizingMaskIntoConstraints="NO" id="606-B2-UOc">
-                                <rect key="frame" x="50" y="618" width="74" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bua" translatesAutoresizingMaskIntoConstraints="NO" id="kMG-gU-Pav">
-                                <rect key="frame" x="162" y="618" width="74" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Keo" translatesAutoresizingMaskIntoConstraints="NO" id="LVj-4i-Pb5">
-                                <rect key="frame" x="268" y="618" width="74" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S8Q-vZ-58c">
                                 <rect key="frame" x="38" y="150" width="148" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -122,27 +110,61 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9n5-m5-LaZ">
+                                <rect key="frame" x="16" y="698" width="122" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="hand.raised.fingers.spread.fill" catalog="system" title="">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onBao:" destination="qHY-KD-SRI" eventType="touchUpInside" id="qeD-nx-6B5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXY-hL-rmA">
+                                <rect key="frame" x="170" y="697" width="54" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Bua" title=""/>
+                                <connections>
+                                    <action selector="onBua:" destination="qHY-KD-SRI" eventType="touchUpInside" id="Rap-jt-WT3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIl-WR-ArU">
+                                <rect key="frame" x="292" y="697" width="54" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Keo" title=""/>
+                                <connections>
+                                    <action selector="onKeo:" destination="qHY-KD-SRI" eventType="touchUpInside" id="oCj-H8-z2O"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTa-Di-mf9">
+                                <rect key="frame" x="105" y="454" width="185" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GHo-Br-LQX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="bao" destination="606-B2-UOc" id="X6G-2e-45x"/>
-                        <outlet property="bua" destination="kMG-gU-Pav" id="J2t-Go-XXX"/>
-                        <outlet property="computerImage" destination="1rQ-HB-1AG" id="gjP-D3-hSa"/>
-                        <outlet property="keo" destination="LVj-4i-Pb5" id="h64-g6-cUj"/>
-                        <outlet property="userImage" destination="RuU-zn-EWn" id="gyD-tB-1SV"/>
+                        <outlet property="computerImage" destination="1rQ-HB-1AG" id="0c6-il-f99"/>
+                        <outlet property="lblResult" destination="RTa-Di-mf9" id="PE0-AY-Qvx"/>
+                        <outlet property="userImage" destination="RuU-zn-EWn" id="H2u-Dl-rpC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8QC-NH-0Ic" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="993" y="-34"/>
+            <point key="canvasLocation" x="991.60305343511448" y="-34.507042253521128"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Bao" width="290" height="320"/>
-        <image name="Bua" width="262" height="308"/>
-        <image name="Keo" width="248" height="368"/>
+        <image name="Bua" width="30" height="30"/>
+        <image name="Keo" width="30" height="30"/>
+        <image name="hand.raised.fingers.spread.fill" catalog="system" width="128" height="125"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
